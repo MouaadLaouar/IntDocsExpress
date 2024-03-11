@@ -53,7 +53,7 @@ const IntOrgsDetails = ({ route, navigation }) => {
     <View style={Style.container}>
       <ScrollView style={ Style.ScrollView }>
         { Documents.map((item, index) => (
-          <Button key={index} title={item.name} onPress={Linking.openURL(item.url)} />
+          <Button key={index} title={item.name} onPress={() => { Linking.openURL(item.url) }} />
         ))}
       </ScrollView>
       <Button title="Back" onPress={() => navigation.goBack()} />

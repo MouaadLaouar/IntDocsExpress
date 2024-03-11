@@ -8,7 +8,8 @@ export const Style = StyleSheet.create({
     Empty: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: 'white'
     },
     ScrollView: {
         marginTop: 50
